@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width">
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+   <link rel="shortcut icon" href="content/ico/favicon.ico">
+   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="content/ico/apple-touch-icon-144-precomposed.png">
+   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="content/ico/apple-touch-icon-114-precomposed.png">
+   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="content/ico/apple-touch-icon-72-precomposed.png">
+   <link rel="apple-touch-icon-precomposed" href="content/ico/apple-touch-icon-57-precomposed.png">
+
+   <title><%= title %></title>
+  <%- stylesheet_link_tag('bootstrap', 'bootstrap-responsive', 'bootmetro', 'bootmetro-tiles', 'bootmetro-charms', 'bootmetro-ui-light', 'icomoon', 'datepicker', 'daterangepicker', 'style', 'prettify', 'application') %>  
+
+  <%- javascript_include_tag('modernizr-2.6.1.min', 'jquery-1.8.3.min', 'prettify', 'jquery.mousewheel', 'jquery.scrollTo', 'bootstrap', 'bootmetro', 'bootmetro-charms', 'demo', 'holder', 'bootstrap-datepicker', 'daterangepicker', 'rails', 'application') %>
+  <%- csrf_meta_tag() %>
+
+</head>
+
+  <body>
+    <header id="nav-bar" class="container-fluid">
+      <div class="row-fluid">
+        <% var flash = request.flash('info').pop(); if (flash) { %>
+        <div class="alert alert-info">
+          <a class="close" data-dismiss="alert">×</a>
+          <%- flash %>
+        </div>
+        <% } %>
+        <% flash = request.flash('error').pop(); if (flash) { %>
+        <div class="alert alert-error">
+          <a class="close" data-dismiss="alert">×</a>
+          <%- flash %>
+        </div>
+        <% }; %>
+        <div>
+          <a id="backbutton" class="win-backbutton" href="/"></a>
+        </div>
+        <div id="top-info" class="pull-right dropdown">
+          <div id="header-container">
+            <a class="header-dropdown dropdown-toggle accent-color" data-toggle="dropdown" href="#">Home.js<b class="caret"></b>   
+            <ul class="dropdown-menu">
+              <li><a href="/devices/new">Add New Device</a></li>
+              <li><a href="/reboot">Reboot Home.js</a></li>
+            </ul>
+            </a>   
+          </div>
+        </div>
+      </div> <!-- Row Fluid -->
+    </header>
+    <%- body %>
+  </body>
+</html>

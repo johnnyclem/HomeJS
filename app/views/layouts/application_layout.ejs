@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width">
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+   <link rel="shortcut icon" href="content/ico/favicon.ico">
+   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="content/ico/apple-touch-icon-144-precomposed.png">
+   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="content/ico/apple-touch-icon-114-precomposed.png">
+   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="content/ico/apple-touch-icon-72-precomposed.png">
+   <link rel="apple-touch-icon-precomposed" href="content/ico/apple-touch-icon-57-precomposed.png">
+
+   <title><%= title %></title>
+  <%- stylesheet_link_tag('bootstrap', 'bootstrap-responsive', 'bootmetro', 'bootmetro-tiles', 'bootmetro-charms', 'bootmetro-light', 'icomoon', 'datepicker', 'daterangepicker', 'style', 'prettify', 'application') %>  
+
+  <%- javascript_include_tag('modernizr-2.6.1.min', 'jquery-1.8.3.min', 'prettify', 'jquery.mousewheel', 'jquery.scrollTo', 'bootstrap.min', 'bootmetro', 'bootmetro-charms', 'demo', 'holder', 'bootstrap-datepicker', 'daterangepicker', 'rails', 'application') %>
+  <%- csrf_meta_tag() %>
+
+</head>
+
+<body>
+
+
+        <div class="container">
+
+
+            
+
+            <hr />
+            <footer>
+                <p>&copy; Company 2012</p>
+            </footer>
+        </div>
+
+
+   <!-- Header
+   ================================================== -->
+   <header id="nav-bar" class="container-fluid">
+      <div class="row-fluid">
+        <% var flash = request.flash('info').pop(); if (flash) { %>
+          <div class="alert alert-info">
+            <a class="close" data-dismiss="alert">×</a>
+            <%- flash %>
+          </div>
+        <% } %>
+        <% flash = request.flash('error').pop(); if (flash) { %>
+          <div class="alert alert-error">
+            <a class="close" data-dismiss="alert">×</a>
+              <%- flash %>
+          </div>
+        <% }; %>
+
+         <div class="span8">
+            <div id="header-container">
+               <a id="backbutton" class="win-backbutton" href="./index.html"></a>
+               <h5>Home.js</h5>
+               <div class="dropdown">
+                  <a class="header-dropdown dropdown-toggle accent-color" data-toggle="dropdown" href="#">
+                     Start
+                     <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                  <li><a href="./hub.html">Hub</a></li>
+                  <li><a href="./tiles-templates.html">Tile Templates</a></li>
+                  <li><a href="./listviews.html">ListViews</a></li>
+                  <li><a href="./appbar-demo.html">Demo App-Bar</a></li>
+                  <li><a href="./table.html">Demo Table</a></li>
+                  <li><a href="./icons.html">Icons</a></li>
+                  <li><a href="./scaffolding.html">Bootstrap Scaffolding</a></li>
+                  <li><a href="./base-css.html">Bootstrap Base CSS</a></li>
+                  <li><a href="./components.html">Bootstrap Components</a></li>
+                  <li><a href="./javascript.html">Bootstrap Javascript</a></li>
+                  <li class="divider"></li>
+                  <li><a href="./index.html">Home</a></li>
+               </ul>
+            </div>
+            </div>
+         </div>
+         <div id="top-info" class="pull-right">
+         <a href="#" class="pull-left">
+            <div class="top-info-block">
+               <h3>FirstName</h3>
+               <h4>LastName</h4>
+            </div>
+            <div class="top-info-block">
+               <b class="icon-user"></b>
+            </div>
+         </a>
+         <hr class="separator pull-left"/>
+         <a id="settings" class="pull-left" href="#">
+            <b class="icon-settings"></b>
+         </a>
+      </div>
+   </div>
+   </header>
+   
+   <%- body %>
+
+   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write("<script src='scripts/jquery-1.8.2.min.js'>\x3C/script>")</script>
+
+   <script type="text/javascript" src="scripts/google-code-prettify/prettify.js"></script>
+   <script type="text/javascript" src="scripts/jquery.mousewheel.js"></script>
+   <script type="text/javascript" src="scripts/jquery.scrollTo.js"></script>
+   <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+   <script type="text/javascript" src="scripts/bootmetro.js"></script>
+   <script type="text/javascript" src="scripts/bootmetro-charms.js"></script>
+   <script type="text/javascript" src="scripts/demo.js"></script>
+   <script type="text/javascript" src="scripts/holder.js"></script>
+   <script type="text/javascript" src="scripts/bootstrap-datepicker.js"></script>
+   <script type="text/javascript" src="scripts/daterangepicker.js"></script>
+
+   <script type="text/javascript">
+      $(".metro").metro();
+   </script>
+</body>
+</html>
