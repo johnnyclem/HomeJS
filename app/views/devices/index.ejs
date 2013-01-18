@@ -7,7 +7,7 @@
 
               <h2>devices</h2>
 
-              <a class="tile app wide bg-color-orange" href="#">
+              <!-- <a class="tile app wide bg-color-orange" href="#">
                  <div class="image-wrapper">
                     <span class="icon icon-">&#xe0de;</span>
                     <div class="app-label">Lighting</div>
@@ -26,15 +26,17 @@
                     <span class="icon icon-">&#x002e;</span>
                  </div>
                  <span class="app-label">Security Cams</span>
-              </a>
+              </a> -->
 
-              <a class="tile app wide bg-color-purple" href="#">
-                 <div class="image-wrapper">
-                    <span class="icon icon-">&#x007d;</span>
-                 </div>
-                 <span class="app-label">HVAC</span>
-              </a>
-
+              <% if (devices.length > 0) { %>
+                <% devices.forEach(function (device) { %>
+                  <a class="tile app wide" href="#">
+                     <div class="image-wrapper">
+                        <span class="icon icon-">&#x007d;</span>
+                     </div>
+                     <span class="app-label"><%- device.name %></span>
+                  </a>
+              <% }); } %>
            </div>
 
            <div id="section2" class="metro-section tile-span-4">
@@ -67,3 +69,4 @@
      </div>
   </div>
 </div>
+<%- include new %>

@@ -27,6 +27,7 @@ action(function create() {
 
 action(function index() {
     this.title = 'Devices index';
+    this.device = new Device;
     Device.all(function (err, devices) {
         switch(params.format) {
             case "json":

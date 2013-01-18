@@ -1,0 +1,22 @@
+<!-- Modal -->
+<div id="newDevice" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="newDeviceLabel" aria-hidden="true">
+  
+  <div class="modal-header">
+   <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+   <h3 id="newDeviceLabel">add a device</h3>
+  </div>
+
+  <div class="modal-body">
+    <% var form = formFor(device, {action: pathTo.devices(), method: 'POST', id: "device-form", class: 'form-horizontal'}) %>
+    <%- form.begin() %>
+    <%- include _form %>
+  </div>
+
+  <div class="modal-footer">
+    <div class="form-actions">
+      <%- form.submit('<i class="icon-ok icon-white"></i> Add Device', {class: 'btn btn-primary'}) %>
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+    </div>
+    <%- form.end() %>
+  </div>
+</div>
