@@ -1047,6 +1047,7 @@ ListView demo
 /* Landscape phones
 ------------------------- */
 @media (max-width: 480px) {
+   
    /* Remove padding above jumbotron */
    body {
       padding-top: 0;
@@ -1129,14 +1130,3 @@ ListView demo
       float: none;
    }
 }
-
-
-Type
-MIME Type text/css
-Resource Type Stylesheet
-Location
-Full URL  http://aozora.github.com/bootmetro/content/css/demo.css
-Scheme  http
-Host  aozora.github.com
-Path  /bootmetro/content/css/demo.css
-Filename  demo.css

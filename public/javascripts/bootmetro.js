@@ -54,13 +54,3 @@
       })*/
    }
 })(jQuery)
-
-Type
-MIME Type   application/x-javascript
-Resource Type   Script
-Location
-Full URL    http://aozora.github.com/bootmetro/scripts/bootmetro.js
-Scheme  http
-Host    aozora.github.com
-Path    /bootmetro/scripts/bootmetro.js
-Filename    bootmetro.js

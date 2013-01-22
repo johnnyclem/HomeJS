@@ -1,55 +1,55 @@
-<div class="row metro metro-sections">
-     <div id="section1" class="metro-section tile-span-1">
-        <h2>devices</h2>
+<div class="metro metro-sections">
+   <div id="section1" class="metro-section tile-span-1">
+      <h2>devices</h2>
 
-        <a class="tile app bg-color-orange" href="#">
-           <div class="icon-">&#xe0de;</div>
-           <span class="app-label">Lighting</span>                  
-        </a>
+      <a class="tile app bg-color-orange" href="#">
+         <div class="icon-">&#xe0de;</div>
+         <span class="app-label">Lighting</span>                  
+      </a>
 
-        <a class="tile app bg-color-green" href="#">
-           <div class="icon-">&#xe016;</div>
-           <span class="app-label">Audio</span>
-        </a>
+      <a class="tile app bg-color-green" href="#">
+         <div class="icon-">&#xe016;</div>
+         <span class="app-label">Audio</span>
+      </a>
 
-        <a class="tile app bg-color-yellow" href="#">
-           <div class="icon-">&#x002e;</div>
-           <span class="app-label">Security Cams</span>
-        </a>
+      <a class="tile app bg-color-yellow" href="#">
+         <div class="icon-">&#x002e;</div>
+         <span class="app-label">Security Cams</span>
+      </a>
 
-        <% if (devices.length > 0) { %>
-          <% devices.forEach(function (device) { %>
-            <a class="tile app" href="#">
-               <div class="icon-">&#x007d;</div>
-               <span class="app-label"><%- device.name %></span>
-            </a>
-        <% }); } %>
+      <% if (devices.length > 0) { %>
+        <% devices.forEach(function (device) { %>
+          <a class="tile app" href="#">
+             <div class="icon-">&#x007d;</div>
+             <span class="app-label"><%- device.name %></span>
+          </a>
+      <% }); } %>
 
-        <a class="tile app bg-color-orange" href="#newDevice" data-toggle="modal">
-           <div class="icon-">&#xe03e;</div>
-           <span class="app-label">Add New Device</span>
-        </a>
-     </div>
+      <a class="tile app bg-color-orange" href="#newDevice" data-toggle="modal">
+         <div class="icon-">&#xe03e;</div>
+         <span class="app-label">Add New Device</span>
+      </a>
+   </div>
 
-     <div id="section2" class="metro-section tile-span-1">
+   <div id="section2" class="metro-section tile-span-1">
 
-            <h2>utilities</h2>
+          <h2>utilities</h2>
 
-            <a class="tile app bg-color-blue" href="#">
-               <div class="icon-">&#x0049;</div>
-               <span class="app-label">Schedule</span>
-            </a>
+          <a class="tile app bg-color-blue" href="#">
+             <div class="icon-">&#x0049;</div>
+             <span class="app-label">Schedule</span>
+          </a>
 
-            <a class="tile app bg-color-yellow" href="#">
-               <div class="icon-">&#xe012;</div>
-               <span class="app-label">Power Consumption</span>
-            </a>
+          <a class="tile app bg-color-yellow" href="#">
+             <div class="icon-">&#xe012;</div>
+             <span class="app-label">Power Consumption</span>
+          </a>
 
-          <a class="tile app bg-color-pink" href="#">
-               <div class="icon-">&#x004d;</div>
-               <span class="app-label">Remote Access</span>
-            </a>
+        <a class="tile app bg-color-pink" href="#">
+             <div class="icon-">&#x004d;</div>
+             <span class="app-label">Remote Access</span>
+          </a>
 
-      </div>
-  </div>
+    </div>
+</div>
 <%- include new %>

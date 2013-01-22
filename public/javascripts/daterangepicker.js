@@ -524,13 +524,3 @@
     };
 
 } (window.jQuery);
-
-Type
-MIME Type   application/x-javascript
-Resource Type   Script
-Location
-Full URL    http://aozora.github.com/bootmetro/scripts/daterangepicker.js
-Scheme  http
-Host    aozora.github.com
-Path    /bootmetro/scripts/daterangepicker.js
-Filename    daterangepicker.js
