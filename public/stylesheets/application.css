@@ -1,3 +1,93 @@
 body {
-  background: #fff;
+  background: #333;
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'IcoMoon';
+  font-size: 70px;
+  line-height: 120px;
+  padding-left: 40px;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  background-image: none;
+  background-position: inherit;
+  speak: none;
+}
+
+.app-label {
+	text-decoration: none;
+	font-size: 16px !important;
+
+}
+
+.win-ui-dark a:hover:active {
+	color: #ccc;
+}
+
+.win-ui-dark a:hover {
+	color: #eee;
+}
+.dark {
+	background: #333
+}
+
+.modal_body {
+
+}
+
+.control-group {
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
+.control-group label{
+	display: inline-block;
+}
+
+.control-group input{
+	display: block;
+	width: 95%;
+	height: 40px;
+	margin-bottom: 20px;
+}
+
+#add_device_button {
+	width: 45%;
+	margin-right: 3%;
+	margin-left: 2%;
+	padding: 10px;
+}
+
+#cancel_modal_button {
+	width: 45%;
+	margin-right: 2%;
+	margin-left: 3%;
+	padding: 10px;
+}
+
+.form-actions {
+	margin-bottom: 0px;
+}
+
+.win-backbutton {
+	color: white;
+	border-color: white;
+	background-color: transparent;
+	margin-left: 0;
+}
+
+.alert-info {
+	height: 44px;
+	text-align: center;
+}
+
+.alert-info h2 {
+	color: #fff;
+	display: inline-block;
+	margin-left: 50px;
+}
+
+#close_alert {
+	color: #fff;
+	border-color: #fff;
 }

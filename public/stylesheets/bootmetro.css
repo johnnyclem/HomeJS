@@ -5697,8 +5697,8 @@ header h1 {
 #nav-bar {
   position: relative;
   display: block;
-  height: 64px;
-  margin-bottom: 20px;
+  height: 44px;
+  padding-left: 0;
 }
 
 .row-fluid .hide {

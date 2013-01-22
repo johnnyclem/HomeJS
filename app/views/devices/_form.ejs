@@ -1,25 +1,7 @@
 <%- errorMessagesFor(device) %>
 <div class="control-group">
-   <%- form.label("name", false, {class: "control-label"}) %>
-   <div class="controls">
-       <%- form.input("name") %>
-   </div>
-</div>
-<div class="control-group">
-   <%- form.label("type", false, {class: "control-label"}) %>
-   <div class="controls">
-       <%- form.input("type") %>
-   </div>
-</div>
-<div class="control-group">
-   <%- form.label("status", false, {class: "control-label"}) %>
-   <div class="controls">
-       <%- form.input("status") %>
-   </div>
-</div>
-<div class="control-group">
-   <%- form.label("icon", false, {class: "control-label"}) %>
-   <div class="controls">
-       <%- form.input("icon") %>
-   </div>
+  <%- form.input("name", {placeholder: 'device name'}) %>
+  <%- form.input("type", {placeholder: 'device type'}) %>
+  <%- form.input("status", {placeholder: 'device status'}) %>
+  <%- form.input("icon", {placeholder: 'device icon'}) %>
 </div>

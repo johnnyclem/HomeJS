@@ -1,21 +1,21 @@
 <!-- Modal -->
-<div id="newDevice" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="newDeviceLabel" aria-hidden="true">
+<div id="newDevice" class="modal hide fade warning" tabindex="-1" role="dialog" aria-labelledby="newDeviceLabel" aria-hidden="true">
   
-  <div class="modal-header">
+  <div class="modal_header">
    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
    <h3 id="newDeviceLabel">add a device</h3>
   </div>
 
-  <div class="modal-body">
-    <% var form = formFor(device, {action: pathTo.devices(), method: 'POST', id: "device-form", class: 'form-horizontal'}) %>
+  <div class="modal_body">
+    <% var form = formFor(device, {action: pathTo.devices(), method: 'POST', id: "device-form"}) %>
     <%- form.begin() %>
     <%- include _form %>
   </div>
 
-  <div class="modal-footer">
+  <div class="modal_footer">
     <div class="form-actions">
-      <%- form.submit('<i class="icon-ok icon-white"></i> Add Device', {class: 'btn btn-primary'}) %>
-        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+      <%- form.submit('Add Device', {class: 'btn btn-primary', id: 'add_device_button'}) %>
+        <button class="btn modal_button" id="cancel_modal_button" data-dismiss="modal" aria-hidden="true">Cancel</button>
     </div>
     <%- form.end() %>
   </div>
